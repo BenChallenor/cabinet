@@ -2,6 +2,7 @@ require 'rails_helper.rb'
 
 feature 'Edit' do
   scenario 'Doc can be edited' do
+    sign_up
     visit('/docs/new')
     fill_in 'Title', with: 'Edit test title'
     fill_in 'Content', with: 'Edit test content'

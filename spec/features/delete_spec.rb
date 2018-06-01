@@ -2,6 +2,7 @@ require 'rails_helper.rb'
 
 feature 'Delete' do
   scenario 'Doc can be deleted' do
+    sign_up
     visit('/docs/new')
     fill_in 'Title', with: 'Delete test doc'
     fill_in 'Content', with: 'Delete test document'

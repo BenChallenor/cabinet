@@ -2,6 +2,7 @@ require 'rails_helper.rb'
 
 feature 'Show doc' do
   scenario 'Page has doc created' do
+    sign_up
     visit('/docs/new')
     fill_in 'Title', with: 'test title'
     fill_in 'Content', with: 'test content'
